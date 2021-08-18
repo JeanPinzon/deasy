@@ -1,0 +1,11 @@
+name: Default definition
+schemas:
+- name: Default
+  slug: default
+  properties:
+    name:
+      type: string
+    age:
+      type: integer
+  required:
+  - name

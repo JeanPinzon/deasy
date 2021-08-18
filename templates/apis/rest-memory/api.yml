@@ -1,0 +1,22 @@
+name: Deasy Example
+schemas:
+- name: Expenses
+  slug: expenses
+  properties:
+    description:
+      type: string
+    value:
+      type: number
+  required:
+    - description
+    - value
+- name: Entries
+  slug: entries
+  properties:
+    description:
+      type: string
+    value:
+      type: number
+  required:
+    - description
+    - value
