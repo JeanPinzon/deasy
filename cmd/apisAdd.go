@@ -20,7 +20,7 @@ var api API
 var apisAddCmd = &cobra.Command{
 	Use:   "add",
 	Short: "Add REST APIs",
-	Long:  `Scaffold a file structure for a new REST API`,
+	Long:  `Scaffold a files structure for a new REST API`,
 	Run: func(cmd *cobra.Command, args []string) {
 		templateDir := "templates/apis/rest-memory"
 
