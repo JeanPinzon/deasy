@@ -1,4 +1,4 @@
-name: Deasy Example
+name: <<.Name>>
 schemas:
 - name: Expenses
   slug: expenses

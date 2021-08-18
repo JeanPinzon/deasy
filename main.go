@@ -6,10 +6,10 @@ import (
 	"github.com/jeanpinzon/deasy/cmd"
 )
 
-//go:embed templates
-var templateFs embed.FS
+//go:embed templates/apis/rest-memory/*
+var apiTemplateFs embed.FS
 
 func main() {
-	cmd.TemplateFs = templateFs
+	cmd.ApiTemplateFs = apiTemplateFs
 	cmd.Execute()
 }

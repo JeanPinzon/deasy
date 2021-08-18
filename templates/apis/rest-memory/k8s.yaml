@@ -1,32 +1,32 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deasy-example
+  name: <<.Slug>>-deployment
   labels:
-    app: deasy-example
+    app: <<.Slug>>
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: deasy-example
+      app: <<.Slug>>
   template:
     metadata:
       labels:
-        app: deasy-example
+        app: <<.Slug>>
     spec:
       containers:
-      - name: deasy-example
-        image: jeanpinzon/deasy-example:${VERSION}
+      - name: <<.Slug>>
+        image: ${DOCKERHUB_USERNAME}/<<.Slug>>:${VERSION}
         ports:
         - containerPort: 8000
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: deasy-service-example
+  name: <<.Slug>>-service
 spec:
   selector:
-    app: deasy-example
+    app: <<.Slug>>
   type: LoadBalancer
   ports:
     - protocol: TCP

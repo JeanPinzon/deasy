@@ -1,6 +1,6 @@
-# Deasy example
+# <<.Name>>
 
-A simple but complete example using Deasy.
+A REST API scaffolded using Deasy
 
 
 ## How to run

@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var TemplateFs embed.FS
+var ApiTemplateFs embed.FS
 
 var cfgFile string
 
